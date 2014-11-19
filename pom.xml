@@ -14,22 +14,23 @@
 		<junit.version>4.11</junit.version>
 		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
 		<maven-war-plugin.version>2.4</maven-war-plugin.version>
-		<jersey.version>2.12</jersey.version>
-		<json.version>20140107</json.version>
+		<jersey.version>2.13</jersey.version>
+		<jackson-jaxrs-json-provider.version>2.4.3</jackson-jaxrs-json-provider.version>
 	</properties>
 
 	<dependencies>
+
 		<!-- JSON -->
 		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>${json.version}</version>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+			<version>${jackson-jaxrs-json-provider.version}</version>
 		</dependency>
 
-		<!-- Jersey -->
+		<!-- REST -->
 		<dependency>
 			<groupId>org.glassfish.jersey.core</groupId>
-			<artifactId>jersey-client</artifactId>
+			<artifactId>jersey-server</artifactId>
 			<version>${jersey.version}</version>
 		</dependency>
 
